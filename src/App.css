@@ -2,8 +2,12 @@
   text-align: center;
 }
 
-html, body, .App, .App-header, #root {
-  height: 100%
+html,
+body,
+.App,
+.App-header,
+#root {
+  height: 100%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,7 +26,6 @@ html, body, .App, .App-header, #root {
   color: white;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -32,10 +35,6 @@ html, body, .App, .App-header, #root {
   }
 }
 
-body {
-  font-family: karla, sans-serif;
-  margin: 0px;
-}
 .title {
   position: absolute;
   top: 40%;
@@ -67,13 +66,10 @@ body {
   width: 80px;
   zoom: 1;
 }
-.titleBackgroundImage,
-.titleContainer {
-  width: 100%;
-}
 .titleContainer {
   overflow: hidden;
   height: 100%;
+  width: 100%;
   position: relative;
 }
 .arrow {

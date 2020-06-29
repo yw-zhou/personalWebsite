@@ -2,13 +2,13 @@ import React from "react";
 import titlePic from "./titleBackground.jpg";
 import arrow from "./arrowRight.svg";
 import "./App.css";
-
+import HeaderTabs from "./HeaderTabs";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div className="titleContainer">
-          <img className="titleBackgroundImage" src={titlePic} alt="Me :)" />
+          <img src={titlePic} alt="Me :)" />
           <img className="arrow" src={arrow} alt="arrow" />
         </div>
         <div className="title">
@@ -25,6 +25,7 @@ function App() {
         </div>
         <div id="about"></div>
       </header>
+      <HeaderTabs />
     </div>
   );
 }
