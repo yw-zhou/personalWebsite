@@ -1,23 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import titlePic from "./titleBackground.jpg";
+import arrow from "./arrowRight.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <div className="titleContainer">
+          <img className="titleBackgroundImage" src={titlePic} alt="Me :)" />
+          <img className="arrow" src={arrow} alt="arrow" />
+        </div>
+        <div className="title">
+          <h3>
+            <em>Hey I'm</em>
+          </h3>
+          <div className="lineContainer">
+            <h1 className="line">
+              <strong>Yi Wei Zhou</strong>
+            </h1>
+          </div>
+
+          <h4>Student, Developer, Creator</h4>
+        </div>
+        <div id="about"></div>
       </header>
     </div>
   );
