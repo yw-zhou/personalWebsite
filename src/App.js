@@ -3,6 +3,8 @@ import titlePic from "./titleBackground.jpg";
 import arrow from "./arrowRight.svg";
 import "./App.css";
 import HeaderTabs from "./HeaderTabs";
+import About from "./About";
+
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,7 @@ function App() {
         <div id="about"></div>
       </header>
       <HeaderTabs />
+      <About />
     </div>
   );
 }
