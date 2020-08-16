@@ -86,13 +86,13 @@ export default About;
 const smallProjectList = {
   FocusPocus: {
     name: "FocusPocus",
-    imgsrc: "",
+    imgsrc: require("../Pictures/FocusPocus.gif"),
     content:
       "Use NLP to interpret and sort browsing content into categories. Users can review their dashboard to reflect upon the topics that distract them the most and find ways to increase their productivity",
   },
   BadmintonTryouts: {
     name: "Badminton Tryouts",
-    imgsrc: "",
+    imgsrc: require("../Pictures/BadmintonLogo.png"),
     content:
       "Badminton Tryout System for Aurora High School with 100+ student users. Supports ranking on limited matches, round-robin mode, player profile view, and match records view.",
   },

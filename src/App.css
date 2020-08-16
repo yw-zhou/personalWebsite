@@ -114,6 +114,11 @@ a svg {
   width: 40%;
   max-width: 40%;
 }
+
+.twoCards {
+  padding: 80px 0px;
+  background-color: #eeeeee;
+}
 .sideDescription li:before {
   content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0";
   width: 100px;
@@ -140,6 +145,16 @@ a svg {
   border-radius: 50%;
   width: 300px;
   margin: 3% 7%;
+}
+
+footer {
+  box-shadow: 0px 0px 10px 0px #888888;
+  padding-top: 10px;
+}
+.subtitle {
+  font-size: 12px;
+  color: #888888;
+  text-align: center;
 }
 .widthMarginBlock {
   width: 70%;
