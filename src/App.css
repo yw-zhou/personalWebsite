@@ -1,40 +1,25 @@
-.App {
-  text-align: center;
-}
-
 html,
 body,
 .App,
-.App-header,
 #root {
   height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.MuiTabs-root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: hidden;
+  min-height: 48px;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 0px 10px 0px #888888;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.centre .line.black {
+  color: rgb(80, 85, 92);
 }
-
 .title {
   position: absolute;
   top: 40%;
@@ -52,7 +37,7 @@ body,
 }
 .black ::before,
 .black ::after {
-  background: black !important;
+  background: rgb(80, 85, 92) !important;
 }
 .line ::before,
 .line ::after {
@@ -68,7 +53,7 @@ body,
 }
 .titleContainer {
   overflow: hidden;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: relative;
 }
@@ -118,10 +103,38 @@ body,
 }
 .widthMarginBlock {
   width: 70%;
+  margin: 4% auto;
 }
 .blankSpace {
   height: 164px;
 }
 .topMargin {
   margin-top: 2%;
+}
+
+.workJourneyImg {
+  border-radius: 10%;
+  width: 20vw;
+  margin: 0vw 2vw;
+  box-shadow: 0px 0px 10px 0px #888888;
+}
+.Company {
+  color: rgb(94, 149, 22);
+  font-size: 16px;
+}
+.Date {
+  color: rgb(80, 85, 92);
+  font-size: 16px;
+}
+.Position {
+  font-size: 20px;
+  color: rgb(51, 119, 204);
+}
+p,
+h6 {
+  margin: 0.5rem;
+  color: rgb(80, 85, 92);
+}
+.sideWidth {
+  max-width: 50rem;
 }

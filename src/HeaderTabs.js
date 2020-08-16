@@ -16,8 +16,8 @@ class HeaderTabs extends React.Component {
           aria-label="disabled tabs example"
         >
           <Tab label="About" />
-          <Tab label="Blog" />
           <Tab label="Projects" />
+          <Tab label="Blog" />
           <Tab label="Resume" />
         </Tabs>
       </Paper>

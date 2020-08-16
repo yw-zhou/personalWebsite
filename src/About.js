@@ -1,10 +1,31 @@
 import React from "react";
 import linkedinPic from "./LinkedInPicture.jpg";
+import WorkJourneyContainer from "./WorkJourneyContainer";
+import titlePic from "./titleBackground.jpg";
+import arrow from "./arrowRight.svg";
+import "./App.css";
 
 class About extends React.Component {
   render() {
     return (
       <div className="centre">
+        <div className="titleContainer">
+          <img src={titlePic} alt="Me :)" />
+          <img className="arrow" src={arrow} alt="arrow" />
+        </div>
+        <div className="title">
+          <h3>
+            <em>Hey I'm</em>
+          </h3>
+          <div className="lineContainer">
+            <h1 className="line">
+              <strong>Yi Wei Zhou</strong>
+            </h1>
+          </div>
+
+          <h4>Student, Developer, Creator</h4>
+        </div>
+        <div id="about"></div>
         <div className="lineContainer topMargin">
           <h1 className="line black">
             <strong>Here's what I've done so far</strong>
@@ -34,6 +55,7 @@ class About extends React.Component {
             <strong>Work Journey</strong>
           </h1>
         </div>
+        <WorkJourneyContainer />
       </div>
     );
   }
