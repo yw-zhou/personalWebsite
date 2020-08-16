@@ -1,6 +1,6 @@
 import React from "react";
 import MediaCard from "./TwoCards";
-
+import { AiFillGithub } from "react-icons/ai";
 class About extends React.Component {
   render() {
     return (
@@ -44,7 +44,7 @@ class About extends React.Component {
             height="300px"
             src="https://www.youtube.com/embed/cZ8H2EFwmOU"
           ></iframe>
-          <div className="sideWidth widthMarginBlock biggerWidth black ">
+          <div className="sideWidth widthMarginBlock biggerWidth black centre ">
             <h3>
               <em>Perfect for any Routine</em>
             </h3>
@@ -53,18 +53,28 @@ class About extends React.Component {
                 <strong>Flex Mirror</strong>
               </h1>
             </div>
-
-            <h4>
-              Wake up to a futuristic morning, unlock your mirror with face
-              authentication, play your favourite vibes on spotify, take
-              pictures with your friends, check the weather or calendar,
-              everything you need (not) at your fingertips.
-            </h4>
+            <div>
+              <h4>Wake up to a futuristic morning</h4>
+              <ul>
+                <li>Unlock your mirror with face authentication</li>
+                <li>Play your favourite vibes on spotify</li>
+                <li>Take pictures with your friends</li>
+                <li>Theck the weather or your calendar</li>
+              </ul>
+              <h4>Everything you need (not) at your fingertips.</h4>
+            </div>
             <p>
               Because that would smudge your fantastic mirror, so we are voice
               controlled :)
             </p>
+            <a href="https://git.uwaterloo.ca./se101-team-flex/electron-app">
+              <AiFillGithub />
+            </a>
           </div>
+        </div>
+        <div className="flexContainer flexCenter twoCards flexStretch">
+          <MediaCard proj={smallProjectList.PixelArt} />
+          <MediaCard proj={smallProjectList.NutShell} />
         </div>
       </div>
     );
@@ -85,5 +95,18 @@ const smallProjectList = {
     imgsrc: "",
     content:
       "Badminton Tryout System for Aurora High School with 100+ student users. Supports ranking on limited matches, round-robin mode, player profile view, and match records view.",
+  },
+  PixelArt: {
+    name: "Pixel Art",
+    imgsrc: require("../Pictures/pixelArt.PNG"),
+    content:
+      "Create indie drawings with Pixel Art. Supports customizeable dimensions and pixel sizes. Users can also save their drawings locally and re-edit them at a later time. ",
+  },
+  NutShell: {
+    name: "Nutshell",
+    imgsrc: "",
+    video: "https://www.youtube.com/embed/Tr4TKt-yplw",
+    content:
+      "Summarizes text from a picture in the desired length, allowing for students to study more efficiently",
   },
 };

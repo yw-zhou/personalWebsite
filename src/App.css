@@ -79,6 +79,9 @@ a {
   align-items: center;
   flex-direction: column;
 }
+.centre ul {
+  list-style-type: none;
+}
 .flexContainer {
   display: flex;
   align-items: flex-start;
@@ -97,6 +100,14 @@ a {
   align-items: stretch;
 }
 
+a svg {
+  width: 30px;
+  height: 30px;
+}
+
+.textLeft {
+  text-align: left;
+}
 .twoCards .MuiCard-root,
 .twoCards .makeStyles-root-1 {
   margin: 0px 2%;
@@ -142,6 +153,10 @@ a {
 }
 .topMargin {
   margin-top: 2%;
+}
+
+.cardimg {
+  width: 100%;
 }
 
 .positionBlock {
