@@ -17,8 +17,13 @@ body,
   box-shadow: 0px 0px 10px 0px #888888;
 }
 
-.centre .line.black {
-  color: rgb(80, 85, 92);
+.black {
+  color: rgb(80, 85, 92) !important;
+  text-align: center;
+}
+
+.black.sideWidth {
+  margin: 4% 20px;
 }
 .title {
   position: absolute;
@@ -78,6 +83,26 @@ a {
   display: flex;
   align-items: flex-start;
 }
+
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.flexMirror {
+  height: 100%;
+}
+
+.flexStretch {
+  align-items: stretch;
+}
+
+.twoCards .MuiCard-root,
+.twoCards .makeStyles-root-1 {
+  margin: 0px 2%;
+  width: 40%;
+  max-width: 40%;
+}
 .sideDescription li:before {
   content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0";
   width: 100px;
@@ -109,11 +134,19 @@ a {
   width: 70%;
   margin: 4% auto;
 }
+.biggerWidth {
+  width: 80%;
+}
 .blankSpace {
   height: 164px;
 }
 .topMargin {
   margin-top: 2%;
+}
+
+.positionBlock {
+  text-align: center;
+  margin: 20vh auto 15vh;
 }
 
 .workJourneyImg {

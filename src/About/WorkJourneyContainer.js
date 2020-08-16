@@ -10,7 +10,7 @@ class WorkJourneyContainer extends React.Component {
         return <p>{info}</p>;
       });
       journeys.push(
-        <div className="widthMarginBlock flexContainer">
+        <div className="widthMarginBlock biggerWidth flexContainer">
           <img className="workJourneyImg" src={work.Image} alt={work.Company} />
           <div className="sideWidth">
             <p className="Position">{work.Position}</p>
