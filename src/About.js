@@ -1,8 +1,8 @@
 import React from "react";
-import linkedinPic from "./LinkedInPicture.jpg";
+import linkedinPic from "./Pictures/LinkedInPicture.jpg";
 import WorkJourneyContainer from "./WorkJourneyContainer";
-import titlePic from "./titleBackground.jpg";
-import arrow from "./arrowRight.svg";
+import titlePic from "./Pictures/titleBackground.jpg";
+import arrow from "./Pictures/arrowRight.svg";
 import "./App.css";
 
 class About extends React.Component {

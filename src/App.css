@@ -57,6 +57,10 @@ body,
   width: 100%;
   position: relative;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 .arrow {
   transform: rotate(90deg) translate(0%, 50%);
   filter: invert(100%) sepia(93%) saturate(0%) hue-rotate(201deg)
@@ -78,7 +82,7 @@ body,
   content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0";
   width: 100px;
   height: 40px;
-  background-image: url("./checkMark.svg");
+  background-image: url("./Pictures/checkMark.svg");
   background-size: cover;
   background-position: center;
   margin-right: 5%;

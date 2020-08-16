@@ -2,7 +2,10 @@ import React from "react";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Paper from "@material-ui/core/Paper";
+import { Link } from "react-router-dom";
+import resume from "./Resume.pdf";
 var value;
+
 class HeaderTabs extends React.Component {
   handleChange() {}
   render() {
@@ -15,10 +18,16 @@ class HeaderTabs extends React.Component {
           onChange={this.handleChange}
           aria-label="disabled tabs example"
         >
-          <Tab label="About" />
-          <Tab label="Projects" />
+          <Link to="/">
+            <Tab label="About" />
+          </Link>
+          <Link to="/projects">
+            <Tab label="Projects" />
+          </Link>
           <Tab label="Blog" />
-          <Tab label="Resume" />
+          <a href={resume}>
+            <Tab label="Resume" />
+          </a>
         </Tabs>
       </Paper>
     );
