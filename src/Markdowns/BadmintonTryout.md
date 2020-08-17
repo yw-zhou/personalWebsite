@@ -32,5 +32,5 @@ Through using Python's library pygame and an object oriented mindset, I was able
 
 Two things I really want to implement in the future:
 
-- **Make a better UI :sweat_smile:** It's pretty ugly as of now, since most of my time was spent with the algorithms in the backend
+- Make a better UI😅 It's pretty ugly as of now, since most of my time was spent with the algorithms in the backend
 - **Make it CloudBased** right now the software is purely local, so by making it cloud based it can be easily accessible. Also I want to make it so that players can submit their scores over the phone and administrators just have to approve/disapprove so there won't always be a line crowding the front-desk.

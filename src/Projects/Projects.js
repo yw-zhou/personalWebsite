@@ -3,7 +3,8 @@ import MediaCard from "./TwoCards";
 import { AiFillGithub } from "react-icons/ai";
 import homepic from "../Pictures/OrderioHome.PNG";
 import cart from "../Pictures/OrderioCart.PNG";
-import { IoIosArrowDown } from "react-icons/io";
+import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 class About extends React.Component {
   state = {
     oneColumn: false,
@@ -64,10 +65,11 @@ class About extends React.Component {
               startup with over 20 restaurant clients — has decided to partner
               up, and introduce Orderio as the newest feature to their clients!
             </h4>
-            <div className="flexContainer flexCenter">
-              <h4>Read More</h4>
-              <IoIosArrowDown />
-            </div>
+            <Link to="./projects/orderio">
+              <Button variant="outlined" color="primary">
+                Learn More
+              </Button>
+            </Link>
           </div>
           <img
             src={cart}

@@ -1,13 +1,12 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import badminton from "../Markdowns/BadmintonTryout.md";
 import Paper from "@material-ui/core/Paper";
 class SpecificProj extends React.Component {
   state = {};
   componentDidMount() {
     console.log("SpecificProj");
     const markDownFile = this.props.match.params.proj;
-    fetch(badminton)
+    fetch(projToMd[markDownFile])
       .then((response) => {
         return response.text();
       })
@@ -35,6 +34,7 @@ class SpecificProj extends React.Component {
           <ReactMarkdown
             source={this.state.markdown}
             transformImageUri={this.getImage.bind(this)}
+            escapeHtml={false}
           />
         </section>
       </Paper>
@@ -42,3 +42,11 @@ class SpecificProj extends React.Component {
   }
 }
 export default SpecificProj;
+
+const projToMd = {
+  focuspocus: require("../Markdowns/FocusPocus.md"),
+  badminton: require("../Markdowns/BadmintonTryout.md"),
+  pixelart: require("../Markdowns/PixelArt.md"),
+  nutshell: require("../Markdowns/NutShell.md"),
+  orderio: require("../Markdowns/Orderio.md"),
+};
