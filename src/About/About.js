@@ -6,19 +6,19 @@ import arrow from "../Pictures/arrowRight.svg";
 import "../App.css";
 
 class About extends React.Component {
-  /*
   state = {
     oneColumn: false,
   };
   updateDimensions = () => {
-    if (window.innerWidth < 750) {
+    console.log(window.innerWidth);
+    if (window.innerWidth < 900) {
       this.setState({ oneColumn: true });
     }
   };
   componentDidMount() {
+    this.updateDimensions();
     window.addEventListener("resize", this.updateDimensions);
-
-  }*/
+  }
   render() {
     return (
       <div className="centre">
@@ -30,8 +30,8 @@ class About extends React.Component {
           <h3>
             <em>Hey I'm</em>
           </h3>
-          <div className="lineContainer">
-            <h1 className="line">
+          <div className={this.state.oneColumn ? "" : "lineContainer"}>
+            <h1 className={this.state.oneColumn ? "" : "line"}>
               <strong>Yi Wei Zhou</strong>
             </h1>
           </div>
@@ -39,12 +39,18 @@ class About extends React.Component {
           <h4>Student, Developer, Creator</h4>
         </div>
         <div id="about"></div>
-        <div className="lineContainer topMargin">
-          <h1 className="line black">
+        <div
+          className={`topMargin ${this.state.oneColumn ? "" : "lineContainer"}`}
+        >
+          <h1 className={`black ${this.state.oneColumn ? "" : "line"}`}>
             <strong>Here's what I've done so far</strong>
           </h1>
         </div>
-        <div className="widthMarginBlock flexContainer">
+        <div
+          className={`widthMarginBlock flexContainer ${
+            this.state.oneColumn ? "flexReverseWrap" : ""
+          }`}
+        >
           <div className="sideWidth">
             <ul className="sideDescription">
               <li>
@@ -60,7 +66,7 @@ class About extends React.Component {
           </div>
           <img id="profilePic" src={linkedinPic} alt="profile pic" />
         </div>
-        <div>
+        <div className="black">
           Waterloo Student blah blah blah about urself something like that
         </div>
         <div className="lineContainer topMargin">
@@ -68,7 +74,7 @@ class About extends React.Component {
             <strong>Work Journey</strong>
           </h1>
         </div>
-        <WorkJourneyContainer />
+        <WorkJourneyContainer oneColumn={this.state.oneColumn} />
       </div>
     );
   }

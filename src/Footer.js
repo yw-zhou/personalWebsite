@@ -15,7 +15,7 @@ class Footer extends React.Component {
           <a href="https://www.facebook.com/yiwei.zhou.94">
             <AiFillFacebook />
           </a>
-          <a href="yiweizhou.ywz@gmail.com">
+          <a href="mailto:yiweizhou.ywz@gmail.com">
             <MdEmail />
           </a>
         </div>

@@ -3,6 +3,10 @@ body,
 .App,
 #root {
   height: 100%;
+  width: 100vw;
+}
+body {
+  overflow-x: hidden;
 }
 
 .MuiTabs-root {
@@ -20,6 +24,7 @@ body,
 .black {
   color: rgb(80, 85, 92) !important;
   text-align: center;
+  margin: 20px 4vw;
 }
 
 .black.sideWidth {
@@ -98,6 +103,15 @@ a {
 
 .flexStretch {
   align-items: stretch;
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.flexReverseWrap {
+  flex-wrap: wrap-reverse;
+  justify-content: center;
 }
 
 a svg {
@@ -191,6 +205,10 @@ footer {
   width: 20vw;
   margin: 0vw 2vw;
   box-shadow: 0px 0px 10px 0px #888888;
+}
+.flexWrap .workJourneyImg {
+  width: 100%;
+  margin: 20px 2vw;
 }
 .Company {
   color: rgb(94, 149, 22);
