@@ -81,7 +81,11 @@ class About extends React.Component {
           <MediaCard proj={smallProjectList.BadmintonTryouts} />
         </div>
 
-        <div className="flexContainer flexCenter biggerWidth widthMarginBlock flexWrap ">
+        <div
+          className={`flexContainer flexCenter biggerWidth widthMarginBlock ${
+            this.state.oneColumn ? "flexWrap" : ""
+          } `}
+        >
           <iframe
             title="flexMirror"
             width={this.state.oneColumn ? "100%" : "60%"}

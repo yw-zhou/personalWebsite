@@ -20,6 +20,17 @@ export default function MediaCard(props) {
       ></iframe>
     );
   }
+  let nationals;
+  if (props.proj.name === "Badminton Tryouts") {
+    nationals = (
+      <p className="pflex">
+        Made by National Badminton Player{" "}
+        <span role="img" aria-label=":sunglasses:">
+          &#128526;
+        </span>
+      </p>
+    );
+  }
   return (
     <Card>
       <CardActionArea>
@@ -30,6 +41,7 @@ export default function MediaCard(props) {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {props.proj.content}
+            {nationals}
           </Typography>
         </CardContent>
       </CardActionArea>

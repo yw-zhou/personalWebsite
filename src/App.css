@@ -126,8 +126,21 @@ a svg {
 .twoCards .MuiCard-root,
 .twoCards .makeStyles-root-1 {
   margin: 20px 2%;
+  padding-bottom: 40px;
   width: 30%;
   min-width: 280px;
+  position: relative;
+}
+
+.twoCards .pflex {
+  text-align: center;
+  color: #aaaaaa;
+}
+
+.twoCards .MuiCardActions-root {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 .twoCards {
