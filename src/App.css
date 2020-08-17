@@ -5,8 +5,9 @@ body,
   height: 100%;
   width: 100vw;
 }
+
 body {
-  overflow-x: hidden;
+  position: relative;
 }
 
 .MuiTabs-root {
@@ -124,8 +125,9 @@ a svg {
 }
 .twoCards .MuiCard-root,
 .twoCards .makeStyles-root-1 {
-  margin: 0px 2%;
+  margin: 20px 2%;
   width: 30%;
+  min-width: 280px;
 }
 
 .twoCards {
@@ -162,6 +164,15 @@ a svg {
 
 .Orderio {
   overflow: hidden;
+  margin-top: 80px !important;
+}
+
+.hide {
+  display: none;
+}
+
+.mobile img {
+  width: 80% !important;
 }
 
 .Orderio img {

@@ -5,12 +5,35 @@ import homepic from "../Pictures/OrderioHome.PNG";
 import cart from "../Pictures/OrderioCart.PNG";
 import { IoIosArrowDown } from "react-icons/io";
 class About extends React.Component {
+  state = {
+    oneColumn: false,
+  };
+  updateDimensions = () => {
+    console.log(window.innerWidth);
+    if (window.innerWidth < 900) {
+      this.setState({ oneColumn: true });
+    }
+  };
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener("resize", this.updateDimensions);
+  }
   render() {
     return (
       <div>
         <div className="flexContainer flexCenter widthMarginBlock biggerWidth black Orderio">
-          <img src={homepic} alt="home" />
-          <div className="sideWidth widthMarginBlock biggerWidth black centre ">
+          <img
+            src={homepic}
+            alt="home"
+            className={this.state.oneColumn ? "hide" : ""}
+          />
+          <div
+            className={`sideWidth  centre ${
+              this.state.oneColumn
+                ? "mobile"
+                : "widthMarginBlock biggerWidth black"
+            }`}
+          >
             <h3>
               <em>Meet</em>
             </h3>
@@ -19,7 +42,11 @@ class About extends React.Component {
                 <strong>Orderio</strong>
               </h1>
             </div>
-
+            <img
+              src={homepic}
+              alt="home"
+              className={this.state.oneColumn ? "" : "hide"}
+            />
             <h4>
               Making restaurant ordering efficient and safe. Simply scan a QR
               code on the table, and order directly on your own phone!{" "}
@@ -40,19 +67,23 @@ class About extends React.Component {
               <IoIosArrowDown />
             </div>
           </div>
-          <img src={cart} alt="cart" />
+          <img
+            src={cart}
+            alt="cart"
+            className={this.state.oneColumn ? "hide" : ""}
+          />
         </div>
 
-        <div className="flexContainer flexCenter twoCards flexStretch">
+        <div className="flexContainer flexCenter twoCards flexStretch flexWrap">
           <MediaCard proj={smallProjectList.FocusPocus} />
           <MediaCard proj={smallProjectList.BadmintonTryouts} />
         </div>
 
-        <div className="flexContainer flexCenter biggerWidth widthMarginBlock ">
+        <div className="flexContainer flexCenter biggerWidth widthMarginBlock flexWrap ">
           <iframe
             title="flexMirror"
-            width="60%"
-            height="300px"
+            width={this.state.oneColumn ? "100%" : "60%"}
+            height={this.state.oneColumn ? "200px" : "300px"}
             src="https://www.youtube.com/embed/cZ8H2EFwmOU"
           ></iframe>
           <div className="sideWidth widthMarginBlock biggerWidth black centre ">
@@ -83,7 +114,7 @@ class About extends React.Component {
             </a>
           </div>
         </div>
-        <div className="flexContainer flexCenter twoCards flexStretch">
+        <div className="flexContainer flexCenter twoCards flexStretch flexWrap">
           <MediaCard proj={smallProjectList.PixelArt} />
           <MediaCard proj={smallProjectList.NutShell} />
         </div>

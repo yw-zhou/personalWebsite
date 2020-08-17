@@ -69,8 +69,10 @@ class About extends React.Component {
         <div className="black">
           Waterloo Student blah blah blah about urself something like that
         </div>
-        <div className="lineContainer topMargin">
-          <h1 className="line black">
+        <div
+          className={`topMargin ${this.state.oneColumn ? "" : "lineContainer"}`}
+        >
+          <h1 className={`black ${this.state.oneColumn ? "" : "line"}`}>
             <strong>Work Journey</strong>
           </h1>
         </div>
