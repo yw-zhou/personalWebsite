@@ -1,4 +1,4 @@
-## Badminton Tryout System
+# Badminton Tryout System
 
 With limited time before the first tournament and very few courts at hand, my highschool badminton coach was at a loss of what to do. Faced with over 100 unfamiliar faces of boys and girls waiting to have a go at joining the team, he turned to me who was the senior badminton team captain at that time and asked if it was possible for this process to be automated.
 
@@ -15,9 +15,13 @@ He had a few key requests:
 ### My Solution
 
 Through using Python's library pygame and an object oriented mindset, I was able to accomplish all of the requirements above.
-![Software img](../Pictures/BadmintonMatchEntry.PNG "Title")
+
+![Software img](./BadmintonMatchEntry.PNG "Title")
+
 **Data Entry:** To keep efficient, each player is given a number during player selection, so when entering matches all they have to input is player number as well as the score of the loser
-![Software img](../Pictures/BadmintonRanks.PNG "Title")
+
+![Software img](./BadmintonRanks.PNG "Title")
+
 **Generating Ranks:** The graph data structure was used for this system, where each player is a node and the matches are the edges. To compare 2 players, the system uses Breadth first search and finds the closest path between the nodes while taking in to account the scores of the matches that connect them. Ranks are stored in a binary search tree and are update upon changes to matches.
 
 ### In Summary

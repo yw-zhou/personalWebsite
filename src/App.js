@@ -4,6 +4,7 @@ import About from "./About/About";
 import Projects from "./Projects/Projects";
 import { Route, BrowserRouter } from "react-router-dom";
 import Footer from "./Footer";
+import SpecificProj from "./Projects/SpecificProj";
 import "./App.css";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
         </header>
         <div className="Content">
           <Route exact path="/" component={About} />
-          <Route path="/projects" component={Projects} />
+          <Route exact path="/projects" component={Projects} />
+          <Route path="/projects/:proj" component={SpecificProj} />
         </div>
         <footer>
           <Footer />

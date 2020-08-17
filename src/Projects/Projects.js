@@ -133,24 +133,28 @@ export default About;
 
 const smallProjectList = {
   FocusPocus: {
+    id: "focuspocus",
     name: "FocusPocus",
     imgsrc: require("../Pictures/FocusPocus.gif"),
     content:
       "Use NLP to interpret and sort browsing content into categories. Users can review their dashboard to reflect upon the topics that distract them the most and find ways to increase their productivity",
   },
   BadmintonTryouts: {
+    id: "badminton",
     name: "Badminton Tryouts",
     imgsrc: require("../Pictures/BadmintonLogo.png"),
     content:
       "Badminton Tryout System for Aurora High School with 100+ student users. Supports ranking on limited matches, round-robin mode, player profile view, and match records view.",
   },
   PixelArt: {
+    id: "pixelart",
     name: "Pixel Art",
     imgsrc: require("../Pictures/pixelArt.PNG"),
     content:
       "Create indie drawings with Pixel Art. Supports customizeable dimensions and pixel sizes. Users can also save their drawings locally and re-edit them at a later time. ",
   },
   NutShell: {
+    id: "nutshell",
     name: "Nutshell",
     imgsrc: "",
     video: "https://www.youtube.com/embed/Tr4TKt-yplw",
