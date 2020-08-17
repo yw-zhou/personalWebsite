@@ -111,8 +111,7 @@ a svg {
 .twoCards .MuiCard-root,
 .twoCards .makeStyles-root-1 {
   margin: 0px 2%;
-  width: 40%;
-  max-width: 40%;
+  width: 30%;
 }
 
 .twoCards {
@@ -149,6 +148,10 @@ a svg {
 
 .Orderio {
   overflow: hidden;
+}
+
+.Orderio img {
+  width: 20vw;
 }
 
 footer {

@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
 import HeaderTabs from "./HeaderTabs";
 import About from "./About/About";
 import Projects from "./Projects/Projects";
 import { Route, BrowserRouter } from "react-router-dom";
 import Footer from "./Footer";
+import "./App.css";
 
 function App() {
   return (

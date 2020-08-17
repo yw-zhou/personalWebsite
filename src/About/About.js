@@ -6,6 +6,19 @@ import arrow from "../Pictures/arrowRight.svg";
 import "../App.css";
 
 class About extends React.Component {
+  /*
+  state = {
+    oneColumn: false,
+  };
+  updateDimensions = () => {
+    if (window.innerWidth < 750) {
+      this.setState({ oneColumn: true });
+    }
+  };
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+
+  }*/
   render() {
     return (
       <div className="centre">

@@ -17,7 +17,8 @@ var workJourneyData = [
     Date: "May 2020 - August 2020",
     Image: require("../Pictures/newtopia.PNG"),
     MoreInfo: [
-      "The trees, therefore, must be such old and primitive techniques that they thought nothing of them, deeming them so inconsequential that even savages like us would know of them and not be suspicious. At that, they probably didn't have too much time after they detected us orbiting and intending to land. And if that were true, there could be only one place where their civilization was hidden.",
+      "Handled client-side interaction with HTML, CSS, jQuery and Angular including searching for merchandise, adding items to shopping bag and a slide show component with responsive buttons implementing partial page updates",
+      "Implemented fade, slide, and delay animations using CSS transitions and jQuery effects for a smooth and intuitive experience for users",
     ],
   },
   {

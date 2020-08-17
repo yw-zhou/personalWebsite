@@ -7,7 +7,6 @@ import resume from "./Resume.pdf";
 var value;
 
 class HeaderTabs extends React.Component {
-  handleChange() {}
   render() {
     return (
       <Paper square>

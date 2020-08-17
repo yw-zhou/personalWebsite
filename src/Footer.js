@@ -9,13 +9,13 @@ class Footer extends React.Component {
       <div className="centre">
         <div className="flexContainer flexCenter">
           <p>Let's Connect</p>
-          <a href="">
+          <a href="https://www.linkedin.com/in/yw-zhou/">
             <AiFillLinkedin />
           </a>
-          <a href="">
+          <a href="https://www.facebook.com/yiwei.zhou.94">
             <AiFillFacebook />
           </a>
-          <a href="">
+          <a href="yiweizhou.ywz@gmail.com">
             <MdEmail />
           </a>
         </div>

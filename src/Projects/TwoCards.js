@@ -1,5 +1,4 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -16,7 +15,7 @@ export default function MediaCard(props) {
       <iframe
         title="flexMirror"
         width="100%"
-        height="340px"
+        height="250px"
         src={props.proj.video}
       ></iframe>
     );

@@ -2,11 +2,13 @@ import React from "react";
 import MediaCard from "./TwoCards";
 import { AiFillGithub } from "react-icons/ai";
 import homepic from "../Pictures/OrderioHome.PNG";
+import cart from "../Pictures/OrderioCart.PNG";
+import { IoIosArrowDown } from "react-icons/io";
 class About extends React.Component {
   render() {
     return (
       <div>
-        <div className="widthMarginBlock positionBlock biggerWidth black Orderio">
+        <div className="flexContainer flexCenter widthMarginBlock biggerWidth black Orderio">
           <img src={homepic} alt="home" />
           <div className="sideWidth widthMarginBlock biggerWidth black centre ">
             <h3>
@@ -31,9 +33,14 @@ class About extends React.Component {
             <h4>
               After pitching project Orderio, SalesPlus — a local POS software
               startup with over 20 restaurant clients — has decided to partner
-              up, and introduce Orderio as the newest feature to their clients.
+              up, and introduce Orderio as the newest feature to their clients!
             </h4>
+            <div className="flexContainer flexCenter">
+              <h4>Read More</h4>
+              <IoIosArrowDown />
+            </div>
           </div>
+          <img src={cart} alt="cart" />
         </div>
 
         <div className="flexContainer flexCenter twoCards flexStretch">
