@@ -12,6 +12,8 @@ class About extends React.Component {
     console.log(window.innerWidth);
     if (window.innerWidth < 900) {
       this.setState({ oneColumn: true });
+    } else {
+      this.setState({ oneColumn: false });
     }
   };
   componentDidMount() {
