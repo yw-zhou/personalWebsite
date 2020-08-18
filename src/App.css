@@ -135,6 +135,10 @@ a svg {
   position: relative;
 }
 
+.smallBottomMargin {
+  margin-bottom: 0px;
+}
+
 .icons svg {
   color: #222222;
   margin: 2px;

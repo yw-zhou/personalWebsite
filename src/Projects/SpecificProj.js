@@ -2,17 +2,22 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import Paper from "@material-ui/core/Paper";
 import pixelArt from "../Markdowns/PixelArt";
+import orderio from "../Markdowns/Orderio";
 class SpecificProj extends React.Component {
   state = {};
-  updateDimensions = () => {
-    console.log("updating");
-    const content = pixelArt(window.innerWidth);
+  updateDimensions = (markDownFile) => {
+    let content;
+    if (markDownFile === "pixelart") {
+      content = pixelArt(window.innerWidth);
+    } else {
+      content = orderio(window.innerWidth);
+    }
     this.setState({ content });
   };
   componentDidMount() {
     const markDownFile = this.props.match.params.proj;
 
-    if (markDownFile !== "pixelart") {
+    if (markDownFile !== "pixelart" && markDownFile !== "orderio") {
       fetch(projToMd[markDownFile])
         .then((response) => {
           return response.text();
@@ -27,7 +32,7 @@ class SpecificProj extends React.Component {
       this.setState({ imageFiles });
     } else {
       window.addEventListener("resize", this.updateDimensions);
-      this.updateDimensions();
+      this.updateDimensions(markDownFile);
     }
   }
   importAll(r, cache) {
@@ -60,5 +65,5 @@ const projToMd = {
   focuspocus: require("../Markdowns/FocusPocus.md"),
   badminton: require("../Markdowns/BadmintonTryout.md"),
   nutshell: require("../Markdowns/NutShell.md"),
-  orderio: require("../Markdowns/Orderio.md"),
+  orderio: require("../Markdowns/Orderio.js"),
 };
