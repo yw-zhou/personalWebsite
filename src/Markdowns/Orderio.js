@@ -1,6 +1,7 @@
 import React from "react";
 import order from "../Pictures/OrderioOrder.PNG";
 import product from "../Pictures/OrderioProduct.PNG";
+import permissions from "../Pictures/OrderioPermissions.PNG";
 
 export default function Orderio(width) {
   return (
@@ -88,6 +89,48 @@ export default function Orderio(width) {
             </li>
           </ul>
         </div>
+      </div>
+      <div
+        className={`flexContainer pixelArt flexCenter ${
+          width > 960 ? "" : "flexWrapReverse"
+        }`}
+      >
+        <div className="sideWidth">
+          <h3>Security/Permissions</h3>
+          <p>
+            As I was pitching Orderio there were some questions from the
+            restaurant clients: What if a user scans a random table and leaves?
+            Or what if they secretly scan a different table? If scanning unlocks
+            the webapp, doesn't that mean they can keep the code and reload the
+            page when they get home?
+          </p>
+          <p>
+            Thus I've updated the web app to add the concept of permissions
+            using the following procedure:
+          </p>
+          <ul>
+            <li>
+              Once a user scans the QR code, a request is sent to the POS system
+              for purchase approval. While this request is pending, customers
+              are free to browse and order, however they cannot click "continue"
+              on the shopping cart page which would process their order
+            </li>
+            <li>
+              Once the user has permissions, he becomes the "host" and can
+              freely send orders to the POS system. The host also obtains a
+              unique code in which he can give to other people at their table to
+              order on their own devices. The host can also determine the
+              billing method. If they choose one bill or split evenly they can
+              "sync cart". This allows for everyone to share a shopping cart so
+              they can see each other's orders.
+            </li>
+            <li>
+              Once the group checks out, all users permission are revoked and
+              the code given to the host no longer works.
+            </li>
+          </ul>
+        </div>
+        <img src={permissions} alt="permissionPage" />
       </div>
     </div>
   );
