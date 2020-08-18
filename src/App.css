@@ -135,6 +135,10 @@ a svg {
   position: relative;
 }
 
+.icons svg {
+  color: #222222;
+  margin: 2px;
+}
 .twoCards .pflex {
   text-align: center;
   color: #aaaaaa;

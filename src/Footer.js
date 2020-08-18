@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillLinkedin, AiFillFacebook } from "react-icons/ai";
+import { AiFillLinkedin, AiFillFacebook, AiFillGithub } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 
 class Footer extends React.Component {
@@ -7,7 +7,7 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="centre">
-        <div className="flexContainer flexCenter">
+        <div className="flexContainer flexCenter icons">
           <p>Let's Connect</p>
           <a href="https://www.linkedin.com/in/yw-zhou/">
             <AiFillLinkedin />
@@ -17,6 +17,9 @@ class Footer extends React.Component {
           </a>
           <a href="mailto:yiweizhou.ywz@gmail.com">
             <MdEmail />
+          </a>
+          <a href="https://github.com/yw-zhou">
+            <AiFillGithub />
           </a>
         </div>
         <p className="subtitle">
