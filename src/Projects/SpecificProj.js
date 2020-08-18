@@ -5,6 +5,7 @@ import pixelArt from "../Markdowns/PixelArt";
 class SpecificProj extends React.Component {
   state = {};
   updateDimensions = () => {
+    console.log("updating");
     const content = pixelArt(window.innerWidth);
     this.setState({ content });
   };
@@ -23,14 +24,7 @@ class SpecificProj extends React.Component {
         });
       let imageFiles = {};
       this.importAll(require.context("../Pictures/MdPics", false), imageFiles);
-      let content = (
-        <ReactMarkdown
-          source={this.state.markdown}
-          transformImageUri={this.getImage.bind(this)}
-          escapeHtml={false}
-        />
-      );
-      this.setState({ content });
+      this.setState({ imageFiles });
     } else {
       window.addEventListener("resize", this.updateDimensions);
       this.updateDimensions();
@@ -44,9 +38,18 @@ class SpecificProj extends React.Component {
     return this.state.imageFiles[uri];
   }
   render() {
+    const content = this.state.content ? (
+      this.state.content
+    ) : (
+      <ReactMarkdown
+        source={this.state.markdown}
+        transformImageUri={this.getImage.bind(this)}
+        escapeHtml={false}
+      />
+    );
     return (
       <Paper className=" widthMarginBlock markdown">
-        <section>{this.state.content}</section>
+        <section>{content}</section>
       </Paper>
     );
   }
