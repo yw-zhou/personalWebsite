@@ -140,6 +140,7 @@ const smallProjectList = {
     imgsrc: require("../Pictures/FocusPocus.gif"),
     content:
       "Use NLP to interpret and sort browsing content into categories. Users can review their dashboard to reflect upon the topics that distract them the most and find ways to increase their productivity",
+    github: "",
   },
   BadmintonTryouts: {
     id: "badminton",
@@ -147,6 +148,7 @@ const smallProjectList = {
     imgsrc: require("../Pictures/BadmintonLogo.png"),
     content:
       "Badminton Tryout System for Aurora High School with 100+ student users. Supports ranking on limited matches, round-robin mode, player profile view, and match records view.",
+    github: "",
   },
   PixelArt: {
     id: "pixelart",
@@ -154,6 +156,7 @@ const smallProjectList = {
     imgsrc: require("../Pictures/pixelArt.PNG"),
     content:
       "Create indie drawings with Pixel Art. Supports customizeable dimensions and pixel sizes. Users can also save their drawings locally and re-edit them at a later time. ",
+    github: "https://github.com/yw-zhou/PixelArt",
   },
   NutShell: {
     id: "nutshell",
@@ -162,5 +165,6 @@ const smallProjectList = {
     video: "https://www.youtube.com/embed/Tr4TKt-yplw",
     content:
       "Summarizes text from a picture in the desired length, allowing for students to study more efficiently",
+    github: "",
   },
 };

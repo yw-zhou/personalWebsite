@@ -5,6 +5,7 @@ import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { AiFillGithub } from "react-icons/ai";
 import { useHistory } from "react-router-dom";
 
 export default function MediaCard(props) {
@@ -44,6 +45,19 @@ export default function MediaCard(props) {
     console.log(item);
     history.push("/projects/" + item);
   }
+
+  let git;
+  if (props.proj.github !== "") {
+    git = (
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/yw-zhou/PixelArt"
+      >
+        <AiFillGithub />
+      </a>
+    );
+  }
   return (
     <Card>
       <CardActionArea>
@@ -59,6 +73,7 @@ export default function MediaCard(props) {
         </CardContent>
       </CardActionArea>
       <CardActions>
+        {git}
         <Button
           onClick={() => handleClick(props.proj.id)}
           size="small"
