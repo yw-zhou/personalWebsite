@@ -5,6 +5,7 @@ import Projects from "./Projects/Projects";
 import { Route, BrowserRouter } from "react-router-dom";
 import Footer from "./Footer";
 import SpecificProj from "./Projects/SpecificProj";
+import Blog from "./Blog/Blog";
 import "./App.css";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route path="/projects/:proj" component={SpecificProj} />
+          <Route exact path="/blog" component={Blog} />
         </div>
         <footer>
           <Footer />

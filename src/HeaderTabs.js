@@ -23,7 +23,9 @@ class HeaderTabs extends React.Component {
           <Link to="/projects">
             <Tab label="Projects" />
           </Link>
-          <Tab label="Blog" />
+          <Link to="/blog">
+            <Tab label="Blog" />
+          </Link>
           <a href={resume}>
             <Tab label="Resume" />
           </a>
