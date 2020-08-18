@@ -144,6 +144,12 @@ a svg {
   margin-top: 120px !important;
 }
 
+.pixelArt img {
+  min-width: 300px;
+  margin: 20px !important;
+  width: 100% !important;
+}
+
 .markdown iframe {
   width: 100%;
 }
