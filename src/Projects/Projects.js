@@ -139,8 +139,8 @@ const smallProjectList = {
     name: "FocusPocus",
     imgsrc: require("../Pictures/FocusPocus.gif"),
     content:
-      "Use NLP to interpret and sort browsing content into categories. Users can review their dashboard to reflect upon the topics that distract them the most and find ways to increase their productivity",
-    github: "",
+      "Using NLP to interpret and sort browsing content into categories. Users can review their dashboard to reflect upon the topics that distract them the most and find ways to increase their productivity",
+    github: "https://github.com/yw-zhou/FocusPocus",
   },
   BadmintonTryouts: {
     id: "badminton",
@@ -148,7 +148,7 @@ const smallProjectList = {
     imgsrc: require("../Pictures/BadmintonLogo.png"),
     content:
       "Badminton Tryout System for Aurora High School with 100+ student users. Supports ranking on limited matches, round-robin mode, player profile view, and match records view.",
-    github: "",
+    github: "https://github.com/yw-zhou/BadmintonTryouts",
   },
   PixelArt: {
     id: "pixelart",
