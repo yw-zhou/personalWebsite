@@ -13,9 +13,9 @@ var workJourneyData = [
   },
   {
     Position: "Juniour Web Developer",
-    Company: "DOES Inc",
-    Date: "May 2020 - August 2020",
-    Image: require("../Pictures/newtopia.PNG"),
+    Company: "DOES Software Inc",
+    Date: "April 2019 - July 2019",
+    Image: require("../Pictures/DoesInc.png"),
     MoreInfo: [
       "Handled client-side interaction with HTML, CSS, jQuery and Angular including searching for merchandise, adding items to shopping bag and a slide show component with responsive buttons implementing partial page updates",
       "Implemented fade, slide, and delay animations using CSS transitions and jQuery effects for a smooth and intuitive experience for users",
