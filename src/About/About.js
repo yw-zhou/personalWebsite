@@ -54,22 +54,60 @@ class About extends React.Component {
           }`}
         >
           <div className="sideWidth">
+            <p>
+              “One day robots will take over the world, and I just want to be on
+              the right side when that happens.” This statement was what came to
+              mind before I decided to pursue programming at the age of 14. I
+              eagerly searched for resources to enhance my skills and eventually
+            </p>
             <ul className="sideDescription">
               <li>
-                Created websites (like this one!) and other web applications
-                using various tools including: JS, React, JQuery, HTML, CSS, etc
+                ...competed in{" "}
+                <span className="highlight">Google Hash Code Competition</span>{" "}
+                achieving <span className="highlight">Top 30 in Canada</span>
               </li>
-              <li>Made games in python using the pygame library</li>
-              <li>Mobile Applications</li>
-              <li>Chrome Extensions</li>
-              <li>OpenCV</li>
-              <li>Databases etc.</li>
+              <li>
+                ...worked as a{" "}
+                <span className="highlight">full stack developer</span> at
+                Newtopia —medium sized health tech company
+              </li>
+              <li>
+                ...admitted to{" "}
+                <span className="highlight">
+                  Capital One Mentorship Program
+                </span>{" "}
+                as an exceptional candidate who is passionate, committed, and
+                has the potential to bring professional career to the next level
+              </li>
+              <li>
+                ...got sponsored and became{" "}
+                <span className="highlight">student ambassador</span> for my
+                university at 2020 Grace Hopper Conference because of my ability
+                and potential to{" "}
+                <span className="highlight">promote woman in CS</span>
+              </li>
+              <li>
+                ...built a <span className="highlight">webapp</span> for
+                restaurant ordering and{" "}
+                <span className="highlight">
+                  partnered with a local startup
+                </span>{" "}
+                SalesPlus POS where their clients will be using this feature in
+                addition to their software
+              </li>
+              <li>
+                ...developed an{" "}
+                <span className="highlight">chrome extension</span> to review
+                productivity using <span className="highlight">NLP</span>{" "}
+              </li>
             </ul>
           </div>
           <img id="profilePic" src={linkedinPic} alt="profile pic" />
         </div>
         <div className="black">
-          Waterloo Student blah blah blah about urself something like that
+          As a Software Engineering Student at the{" "}
+          <span className="highlight">University of Waterloo</span>, I've had
+          various internships. Read about my work journey below!
         </div>
         <div
           className={`topMargin ${this.state.oneColumn ? "" : "lineContainer"}`}

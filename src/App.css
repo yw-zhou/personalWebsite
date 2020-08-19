@@ -203,8 +203,12 @@ a svg {
 .sideDescription li {
   border-top: 1px solid #aaaaaa;
   padding: 3% 0% 3% 0%;
-  font-size: 18px;
+  font-size: 15px;
   text-align: left;
+}
+
+.highlight {
+  background-color: #a2daf2;
 }
 .sideDescription {
   width: auto;
@@ -254,7 +258,7 @@ footer {
 }
 .widthMarginBlock {
   width: 70%;
-  margin: 4% auto;
+  margin: 40px auto;
 }
 .biggerWidth {
   width: 80%;

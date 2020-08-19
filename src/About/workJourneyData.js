@@ -17,8 +17,10 @@ var workJourneyData = [
     Date: "April 2019 - July 2019",
     Image: require("../Pictures/DoesInc.png"),
     MoreInfo: [
+      "Developed front-end tasks on the ecommerce website strutmetal.com",
       "Handled client-side interaction with HTML, CSS, jQuery and Angular including searching for merchandise, adding items to shopping bag and a slide show component with responsive buttons implementing partial page updates",
       "Implemented fade, slide, and delay animations using CSS transitions and jQuery effects for a smooth and intuitive experience for users",
+      "Populated database with images, and products using SQL script",
     ],
   },
   {
@@ -28,6 +30,8 @@ var workJourneyData = [
     Image: require("../Pictures/Southlake.png"),
     MoreInfo: [
       "Automated multiple workflow application forms used throughout the entire hospital with Python and SRHC’s unique scripting language",
+      "Worked closely with software developer on application development and software-related technical issues implementing Agile Development Principles",
+      "Installed and configured (Hospital management and communication) software and hardware",
     ],
   },
 ];
