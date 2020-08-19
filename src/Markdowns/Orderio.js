@@ -29,7 +29,7 @@ export default function Orderio(width) {
 
       <div
         className={`flexContainer pixelArt flexCenter ${
-          width > 960 ? "" : "flexWrapReverse"
+          width > 960 ? "" : "flexReverseWrap"
         }`}
       >
         <div className="sideWidth">
@@ -92,7 +92,7 @@ export default function Orderio(width) {
       </div>
       <div
         className={`flexContainer pixelArt flexCenter ${
-          width > 960 ? "" : "flexWrapReverse"
+          width > 960 ? "" : "flexReverseWrap"
         }`}
       >
         <div className="sideWidth">

@@ -150,7 +150,11 @@ a svg {
 .markdown {
   max-width: 850px;
   padding: 15px 50px 50px;
-  margin-top: 120px !important;
+  margin-top: 70px !important;
+}
+
+.sideAboutMe {
+  max-width: 500px !important;
 }
 
 .blog {
@@ -189,6 +193,7 @@ a svg {
   padding: 80px 0px;
   background-color: #eeeeee;
 }
+/*
 .sideDescription li:before {
   content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0";
   width: 100px;
@@ -200,21 +205,52 @@ a svg {
   filter: invert(35%) sepia(45%) saturate(515%) hue-rotate(153deg)
     brightness(94%) contrast(94%);
 }
-.sideDescription li {
-  border-top: 1px solid #aaaaaa;
-  padding: 3% 0% 3% 0%;
+*/
+.sideDescription div {
+  border-top: 1px solid #cccccc;
+  padding: 3% 0px 3% 27px;
   font-size: 15px;
   text-align: left;
 }
 
 .highlight {
-  background-color: #a2daf2;
+  background-color: #e0eeff;
 }
 .sideDescription {
   width: auto;
   list-style-type: none;
   padding-inline-start: 0;
 }
+
+ul.custom-bullet {
+  clear: left;
+}
+
+.custom-bullet li:before {
+  content: "";
+  height: 1em;
+  width: 1em;
+  display: block;
+  float: left;
+  margin-left: -1.5em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.check li:before {
+  background-image: url("./Pictures/checkMark.svg");
+  background-size: 90%;
+  background-position: center;
+  transition: background-size 0.3s;
+  -webkit-transition: background-size 0.3s;
+  filter: invert(44%) sepia(87%) saturate(616%) hue-rotate(181deg)
+    brightness(81%) contrast(96%);
+}
+ul.check > li:hover:before {
+  background-size: 100%;
+}
+
 #profilePic {
   border-radius: 50%;
   width: 300px;

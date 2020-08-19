@@ -50,61 +50,76 @@ class About extends React.Component {
         </div>
         <div
           className={`widthMarginBlock flexContainer ${
-            this.state.oneColumn ? "flexReverseWrap" : ""
+            this.state.oneColumn ? "flexReverseWrap biggerWidth " : ""
           }`}
         >
-          <div className="sideWidth">
+          <div className="sideWidth sideAboutMe">
             <p>
               “One day robots will take over the world, and I just want to be on
               the right side when that happens.” This statement was what came to
               mind before I decided to pursue programming at the age of 14. I
               eagerly searched for resources to enhance my skills and eventually
             </p>
-            <ul className="sideDescription">
-              <li>
-                ...competed in{" "}
-                <span className="highlight">Google Hash Code Competition</span>{" "}
-                achieving <span className="highlight">Top 30 in Canada</span>
-              </li>
-              <li>
-                ...worked as a{" "}
-                <span className="highlight">full stack developer</span> at
-                Newtopia —medium sized health tech company
-              </li>
-              <li>
-                ...admitted to{" "}
-                <span className="highlight">
-                  Capital One Mentorship Program
-                </span>{" "}
-                as an exceptional candidate who is passionate, committed, and
-                has the potential to bring professional career to the next level
-              </li>
-              <li>
-                ...got sponsored and became{" "}
-                <span className="highlight">student ambassador</span> for my
-                university at 2020 Grace Hopper Conference because of my ability
-                and potential to{" "}
-                <span className="highlight">promote woman in CS</span>
-              </li>
-              <li>
-                ...built a <span className="highlight">webapp</span> for
-                restaurant ordering and{" "}
-                <span className="highlight">
-                  partnered with a local startup
-                </span>{" "}
-                SalesPlus POS where their clients will be using this feature in
-                addition to their software
-              </li>
-              <li>
-                ...developed an{" "}
-                <span className="highlight">chrome extension</span> to review
-                productivity using <span className="highlight">NLP</span>{" "}
-              </li>
+            <ul className="sideDescription custom-bullet check">
+              <div>
+                <li>
+                  ...competed in{" "}
+                  <span className="highlight">
+                    Google Hash Code Competition
+                  </span>{" "}
+                  achieving <span className="highlight">Top 30 in Canada</span>
+                </li>
+              </div>
+              <div>
+                <li>
+                  ...worked as a{" "}
+                  <span className="highlight">full stack developer</span> at
+                  Newtopia —medium sized health tech company
+                </li>
+              </div>
+              <div>
+                <li>
+                  ...admitted to{" "}
+                  <span className="highlight">
+                    Capital One Mentorship Program
+                  </span>{" "}
+                  as an exceptional candidate who is passionate, committed, and
+                  has the potential to bring professional career to the next
+                  level
+                </li>
+              </div>
+              <div>
+                <li>
+                  ...got sponsored and became{" "}
+                  <span className="highlight">student ambassador</span> for my
+                  university at 2020 Grace Hopper Conference because of my
+                  ability and potential to{" "}
+                  <span className="highlight">promote woman in CS</span>
+                </li>
+              </div>
+              <div>
+                <li>
+                  ...built a <span className="highlight">webapp</span> for
+                  restaurant ordering and{" "}
+                  <span className="highlight">
+                    partnered with a local startup
+                  </span>{" "}
+                  SalesPlus POS where their clients will be using this feature
+                  in addition to their software
+                </li>
+              </div>
+              <div>
+                <li>
+                  ...developed an{" "}
+                  <span className="highlight">chrome extension</span> to review
+                  productivity using <span className="highlight">NLP</span>{" "}
+                </li>
+              </div>
             </ul>
           </div>
           <img id="profilePic" src={linkedinPic} alt="profile pic" />
         </div>
-        <div className="black">
+        <div className="black sideAboutMe biggerWidth">
           As a Software Engineering Student at the{" "}
           <span className="highlight">University of Waterloo</span>, I've had
           various internships. Read about my work journey below!
