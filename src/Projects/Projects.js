@@ -10,7 +10,6 @@ class About extends React.Component {
     oneColumn: false,
   };
   updateDimensions = () => {
-    console.log(window.innerWidth);
     if (window.innerWidth < 900) {
       this.setState({ oneColumn: true });
     } else {
@@ -61,8 +60,8 @@ class About extends React.Component {
               Orderio is here to provide a solution.
             </p>
             <h4>
-              After pitching project Orderio, SalesPlus — a local POS software
-              startup with over 20 restaurant clients — has decided to partner
+              After pitching project Orderio, SalesPlus POS —a local softare
+              startup with over 20 restaurant clients— has decided to partner
               up, and introduce Orderio as the newest feature to their clients!
             </h4>
             <Link to="./projects/orderio">

@@ -67,7 +67,7 @@ body {
 }
 .titleContainer {
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 50px);
   width: 100%;
   position: relative;
 }
@@ -154,10 +154,10 @@ a svg {
 }
 
 .blog {
-  padding: 100px 15% !important  ;
+  padding: 50px 15% !important;
   text-align: center;
   background-color: #eeeeee;
-  min-height: calc(100vh - 290px);
+  min-height: calc(100vh - 238px);
 }
 
 .pixelArt img {
@@ -223,7 +223,6 @@ a svg {
 
 .Orderio {
   overflow: hidden;
-  margin-top: 80px !important;
 }
 
 .hide {

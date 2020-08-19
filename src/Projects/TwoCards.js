@@ -68,8 +68,8 @@ export default function MediaCard(props) {
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {props.proj.content}
-            {nationals}
           </Typography>
+          {nationals}
         </CardContent>
       </CardActionArea>
       <CardActions>

@@ -33,7 +33,7 @@ export default function Orderio(width) {
         }`}
       >
         <div className="sideWidth">
-          <h3>Partnering with SalesPlus</h3>
+          <h3>Partnering with SalesPlus POS</h3>
           <p>
             In August I was able to partner with SalesPlus a restaurant POS
             startup. They will be introducing Orderio as their newest option on
@@ -41,7 +41,7 @@ export default function Orderio(width) {
             pitched the idea to a couple of their clients and it has been very
             well recieved. I've taken their various feedback and continued to
             upgrade features on the web app, using real restaurant databases
-            (provided by SalesPlus) to test.
+            (provided by SalesPlus POS) to test.
           </p>
           <h3>Using Orderio</h3>
           <ul>
