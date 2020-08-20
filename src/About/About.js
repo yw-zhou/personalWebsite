@@ -42,7 +42,9 @@ class About extends React.Component {
         </div>
         <div id="about"></div>
         <div
-          className={`topMargin ${this.state.oneColumn ? "" : "lineContainer"}`}
+          className={`topMargin ${
+            this.state.oneColumn ? "biggerWidth" : "lineContainer"
+          }`}
         >
           <h1 className={`black ${this.state.oneColumn ? "" : "line"}`}>
             <strong>Here's what I've done so far</strong>
