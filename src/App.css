@@ -37,6 +37,7 @@ body {
 .title {
   position: absolute;
   top: 47vh;
+  padding: 1% 10%;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -70,6 +71,35 @@ body {
   height: calc(100vh - 50px);
   width: 100%;
   position: relative;
+  filter: brightness(80%);
+}
+.title .line {
+  font-size: 2.6rem !important;
+}
+
+.title h3 {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+.title h4 {
+  font-size: 1.3rem;
+  margin: 0px;
+}
+
+.titleColumnView {
+  top: 36vh;
+  width: 60%;
+}
+
+.width100 {
+  width: 100%;
+  position: relative;
+}
+
+.height100 {
+  height: 100%;
+  float: right;
 }
 a {
   text-decoration: none;

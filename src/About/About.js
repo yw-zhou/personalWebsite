@@ -6,15 +6,21 @@ import arrow from "../Pictures/arrowRight.svg";
 import "../App.css";
 
 class About extends React.Component {
-  state = {
-    oneColumn: false,
-  };
+  state = {};
   updateDimensions = () => {
     console.log(window.innerWidth);
     if (window.innerWidth < 900) {
       this.setState({ oneColumn: true });
     } else {
       this.setState({ oneColumn: false });
+    }
+    if (window.innerWidth > window.innerHeight) {
+      this.setState({
+        titleStyle: { bottom: window.innerWidth - window.innerHeight - 100 },
+        titleDim: "width100",
+      });
+    } else {
+      this.setState({ titleDim: "height100" });
     }
   };
   componentDidMount() {
@@ -25,10 +31,17 @@ class About extends React.Component {
     return (
       <div className="centre">
         <div className="titleContainer">
-          <img src={titlePic} alt="Me :)" />
+          <img
+            style={this.state.titleStyle}
+            className={this.state.titleDim}
+            src={titlePic}
+            alt="Me :)"
+          />
           <img className="arrow" src={arrow} alt="arrow" />
         </div>
-        <div className="title">
+        <div
+          className={`title ${this.state.oneColumn ? "titleColumnView" : ""}`}
+        >
           <h3>
             <em>Hey I'm</em>
           </h3>
