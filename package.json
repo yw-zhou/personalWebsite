@@ -38,7 +38,8 @@
     "deploy": "aws s3 sync build/ s3://yiweizhou.com --delete && npm run invalidate",
     "invalidate": "aws cloudfront create-invalidation --distribution-id E1R28ULRG6IUK1 --paths \"/*\"",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "link-build": "sed -i.bu 's_=\"/_=\"./_g' './public/certik/index.html'"
   },
   "eslintConfig": {
     "extends": "react-app"

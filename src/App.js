@@ -6,6 +6,7 @@ import { Route, BrowserRouter } from "react-router-dom";
 import Footer from "./Footer";
 import SpecificProj from "./Projects/SpecificProj";
 import Blog from "./Blog/Blog";
+// import CertikDashboard from "./certik/index.html";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,13 @@ function App() {
           <Route exact path="/projects" component={Projects} />
           <Route path="/projects/:proj" component={SpecificProj} />
           <Route exact path="/blog" component={Blog} />
+          <Route
+            exact
+            path="/certik-dashboard"
+            render={() => {
+              window.location.href = "./certik/index.html";
+            }}
+          />
         </div>
         <footer>
           <Footer />
